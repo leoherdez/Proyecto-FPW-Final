@@ -7,7 +7,7 @@ fetch(url2).then(function(respuesta){
 }).then(function(datos){
     for(let i = 0; i < datos.length; i++ ){
         console.log(datos[i]);
-        contenedor2.innerHTML += "<div class='Secciones'> <div class='Apartados'> <a href='Subpaginas/Noticias.html'> <img src='"+uri+datos[i]["imagen"]+"' class='Destacado'> <h4>"+datos[i]["nombre"]+" <span>"+datos[i]["Info"]+" </span> </h4> </a> </div> </div> ";
+        contenedor2.innerHTML += "<div class='Secciones'> <div class='Apartados'> <a href='Subpaginas/Comunidad.html'> <img src='"+uri+datos[i]["imagen"]+"' class='Destacado'> <h4>"+datos[i]["nombre"]+" <span>"+datos[i]["Info"]+" </span> </h4> </a> </div> </div> ";
 
     }
 }).catch(function(error){
