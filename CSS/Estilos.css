@@ -119,14 +119,14 @@ body{
 .Contenido{
   padding: 2% 15%;
 }
-
 .Contenido2{
-  padding-top: 0;
+  padding-top: 0%;
   padding-bottom: 5%;
 }
 
 .Secciones{
   padding: 0% 2%;
+  display: inline-block;
 }
 
 @media screen and (max-width: 945px) {

@@ -25,7 +25,7 @@
 
 			<div class="Busqueda">
 				<div class="Lupa">
-					<i class="fa-solid fa-magnifying-glass" onclick="remover()"></i>
+					<i class="fa-solid fa-magnifying-glass" onclick="remover()" ondblclick="agregar()"></i>
 				</div>
 
 				<input id="Remover" class="BarraNav Remover" type="search" placeholder="Búsqueda">
@@ -36,82 +36,20 @@
 		</div>
 
 	</div>
-		<script>
-			function agregar(){
-				var elemento = document.getElementById("Remover");
-				elemento.classList.add("Remover");
-			}
 
-			function remover(){
-				var elemento = document.getElementById("Remover");
-				elemento.classList.remove("Remover");
-			}
-		</script>
-
-	<div class="Contenido">
+	<div id="Contenido1" class="Contenido">
 
 		<h3>Noticias Destacadas</h3>
 
-		<div class="Secciones">
-
-				<div class="Apartados">
-
-					<a href="Subpaginas/Noticias.html">
-						<img src="Imagenes/Noticia Destacada" alt="Noticia" class="Destacado">
-						<h4>Magnus Carlsen: <span> Gana su quinto título mundial.</span></h4>
-					</a>
-
-				</div>
-			
-				<div class="Apartados">
-					<a href="Subpaginas/Noticias.html">
-						<img src="Imagenes/Noticia mas reciente.png" alt="Segunda noticia" class="Destacado" >
-						<h4>Candidatos 2022: <span>¿Qué dicen los números?</span></h4>
-					</a>
-			
-				</div>
-
-				<div class="Apartados">
-					<a href="Subpaginas/Noticias.html">
-						<img src="Imagenes/Noticia Destacada3" alt="Tercer noticia" class="Destacado" >
-						<h4>Rapport y Radjabov: <span>incluidos en el sorprendente Norway Chess 2022.</span></h4>
-					</a>
-				</div>
-			
-		</div>
 	</div>
-
-	<div class="Contenido Contenido2">	 
+	
+	<div id="Contenido2" class="Contenido Contenido2">
+ 
 		<h3>Articulos</h3>
 	
-		<div class="Secciones">
-
-			<div class="Apartados">
-
-				<a href="Subpaginas/Comunidad.html">
-					<img src="Imagenes/Articulo1.png" alt="Articulo" class="Destacado">
-					<h4>Filosofía de los peones: <span>Aislamiento en el juego de ajedrez.</span></h4>
-				</a>
-
-			</div>
-
-			<div class="Apartados">
-				<a href="Subpaginas/Comunidad.html">
-					<img src="Imagenes/Articulo2.png" alt="Segundo Articulo" class="Destacado" >
-					<h4>El enigma de Lasker: <span>Errores y genialidad combinados.</span></h4>
-				</a>
-
-			</div>
-			<div class="Apartados">
-				<a href="Subpaginas/Comunidad.html">
-					<img src="Imagenes/Articulo3" alt="Tercer Articulo" class="Destacado" >
-					<h4>Mijaíl Chigorin: <span>Un genio creativo hasta el final.</span></h4>
-				</a>
-			</div>
-
-		</div>
 	</div>
-	
+
+
 
     <div id="Pie-pagina">
     
@@ -154,5 +92,10 @@
     </div>
 
 	<script src="Codigos js/kit fontaawesome.js" ></script>
+	<script src="Codigos js/Api.js"></script>
+	<script src="Codigos js/Api2.js"></script>
+	<script src="Codigos js/remover.js"></script>
+	<script src="Codigos js/agregar.js"></script>
+
 </body>
 </html>
