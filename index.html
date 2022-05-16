@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UnitChess</title>
     <link rel="stylesheet" href="CSS/Estilos.css">
-    
-    
-
 </head>
 
 <body>
@@ -16,80 +13,114 @@
 	<div id="Encabezado">
     	<div class="navbar">
        
-        <a href="index.html" id="PGL">
-            <img class="logo-1" src="Imagenes/a.svg" alt="Logo">
-        </a>
+        	<a href="index.html" id="PGL">
+            	<img class="logo-1" src="Imagenes/a.svg" alt="Logo">
+        	</a>
 		
-		<div class="Ele_Menu">
-		<a href="Subpaginas/Comunidad.html" class="Menu">Comunidad</a>
-		<a href="Subpaginas/Biblioteca.html"class="Menu">Biblioteca</a>
-		<a href="Subpaginas/Noticias.html" class="Menu">Noticias</a>
-		</div>
+			<div class="Ele_Menu">
+				<a href="Subpaginas/Comunidad.html" class="Menu">Comunidad</a>
+				<a href="Subpaginas/Biblioteca.html"class="Menu">Biblioteca</a>
+				<a href="Subpaginas/Noticias.html" class="Menu">Noticias</a>
+			</div>
 
-		
+			<div class="Busqueda">
+				<div class="Lupa">
+					<i class="fa-solid fa-magnifying-glass" onclick="remover()"></i>
+				</div>
 
-		<div class="Busqueda">
-				<i class="fa-solid fa-magnifying-glass"></i>
-				<input type="search" placeholder="Búsqueda">
+				<input id="Remover" class="BarraNav Remover" type="search" placeholder="Búsqueda">
 
-		</div>
+				<input class="Login" type="button" value="Iniciar Sesion">
+
+			</div>
 		</div>
 
 	</div>
+		<script>
+			function agregar(){
+				var elemento = document.getElementById("Remover");
+				elemento.classList.add("Remover");
+			}
 
+			function remover(){
+				var elemento = document.getElementById("Remover");
+				elemento.classList.remove("Remover");
+			}
+		</script>
 
-	<div id="Contenido">
+	<div class="Contenido">
 
 		<h3>Noticias Destacadas</h3>
 
 		<div class="Secciones">
 
+				<div class="Apartados">
+
+					<a href="Subpaginas/Noticias.html">
+						<img src="Imagenes/Noticia Destacada" alt="Noticia" class="Destacado">
+						<h4>Magnus Carlsen: <span> Gana su quinto título mundial.</span></h4>
+					</a>
+
+				</div>
+			
+				<div class="Apartados">
+					<a href="Subpaginas/Noticias.html">
+						<img src="Imagenes/Noticia mas reciente.png" alt="Segunda noticia" class="Destacado" >
+						<h4>Candidatos 2022: <span>¿Qué dicen los números?</span></h4>
+					</a>
+			
+				</div>
+
+				<div class="Apartados">
+					<a href="Subpaginas/Noticias.html">
+						<img src="Imagenes/Noticia Destacada3" alt="Tercer noticia" class="Destacado" >
+						<h4>Rapport y Radjabov: <span>incluidos en el sorprendente Norway Chess 2022.</span></h4>
+					</a>
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="Contenido Contenido2">	 
+		<h3>Articulos</h3>
+	
+		<div class="Secciones">
+
 			<div class="Apartados">
 
-				<a href="Subpaginas/Noticias.html">
-					<img src="Imagenes/Noticia Destacada" alt="Noticia" class="Destacado">
+				<a href="Subpaginas/Comunidad.html">
+					<img src="Imagenes/Articulo1.png" alt="Articulo" class="Destacado">
+					<h4>Filosofía de los peones: <span>Aislamiento en el juego de ajedrez.</span></h4>
 				</a>
 
 			</div>
 
 			<div class="Apartados">
-				<a href="Subpaginas/Noticias.html">
-					<img src="Imagenes/Noticia Destacada2" alt="Segunda noticia" class="Destacado" >
-			</a>
+				<a href="Subpaginas/Comunidad.html">
+					<img src="Imagenes/Articulo2.png" alt="Segundo Articulo" class="Destacado" >
+					<h4>El enigma de Lasker: <span>Errores y genialidad combinados.</span></h4>
+				</a>
 
 			</div>
 			<div class="Apartados">
-				<a href="Subpaginas/Noticias.html">
-					<img src="Imagenes/Noticia Destacada3" alt="Tercer noticia" class="Destacado" >
-			</a>
+				<a href="Subpaginas/Comunidad.html">
+					<img src="Imagenes/Articulo3" alt="Tercer Articulo" class="Destacado" >
+					<h4>Mijaíl Chigorin: <span>Un genio creativo hasta el final.</span></h4>
+				</a>
 			</div>
 
-
+		</div>
 	</div>
-
-	</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+	
 
     <div id="Pie-pagina">
     
-	<div id="Inicio">
-        <p class="Contacto">Contactanos</p>
-	</div>
+		<div id="Inicio">
+        	<p class="Contacto">Contactanos</p>
+		</div>
 
         <div id="Redes-Sociales">
-
-			
+	
 			<a href="https://es-la.facebook.com/" target="_blank">
 				<i class="Facebook fa-brands fa-facebook-square"></i>
 			</a>
@@ -109,17 +140,18 @@
 			<a href="https://wa.me/522491610415" target="_blank">
 				<i class="Whatsapp fa-brands fa-whatsapp"></i>
 			</a>
-			<a href="https://discord.gg/AWU2qDbX" target="_blank">
+			<a href="https://discord.gg/gWfcBgrp" target="_blank">
 				<i class="Discord fa-brands fa-discord"></i>
 			</a>
 		</div>
 
 		<div id="Final">
-            <p class="Informacion">UnitChess │ UnitChess@hotmail.com │ <a href="/Subpaginas/Privacidad.html">Politica de privacidad </a> · <a href="/Subpaginas/Terminos.html"> Terminos y Condiciones</a>
+            <p class="Informacion">UnitChess │ UnitChess@hotmail.com │ 
+				<a href="/Subpaginas/Privacidad.html" class="Copyright">Politica de privacidad </a> · 
+				<a href="/Subpaginas/Terminos.html" class="Copyright"> Terminos y Condiciones</a>
             </p>
 		</div>
     </div>
-
 
 	<script src="Codigos js/kit fontaawesome.js" ></script>
 </body>

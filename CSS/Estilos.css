@@ -1,78 +1,201 @@
 body{
-    background-color:#0e0e0e;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #ffffffc9;
-    color: #d1cccc;
+  background-color:#0e0e0e;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #d1cccc;
 }
 
- #Encabezado{
-    background-color: #282520;
-    padding: 3px 7%;
- }
-
+#Encabezado{
+  background-color: #282520;
+  padding: 3px 7%;
+}
 
 .logo-1{
-    width: 160px;
-    height: 60px;
-    float: left;
+  width: 160px;
+  height: 60px;
+  float: left;
 }
 
 .Ele_Menu{
-  margin:-.5% 15%;
+  margin:.5% 15%;
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: #282520;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  overflow: hidden;
+  background-color: #282520;
+  font-family: Arial, Helvetica, sans-serif;
+}
   
-  .navbar .Menu {
-    float: left;
-    font-size: 16px;
-    color: #ffffffc9;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.navbar .Menu {
+  float: left;
+  font-size: 16px;
+  color: #ffffffc9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
   
-  .navbar .Menu:hover {
-    background-color: #000000bf;
-    transition: 0.3s;
-  }
-
-  .Busqueda, input{
-    display: flex;
-    float: right;
-    margin:1% 5%;
-    background: none;
-    color:#ffffffc9 ;
+.navbar .Menu:hover {
+  background-color: #000000bf;
+  transition: 0.3s;
 }
 
-#Contenido{
+.Busqueda{
+  display: flex;
+  float: right;;
+}
+
+.Lupa{
+  padding: 14px 16px;
+}
+  
+.BarraNav{
+  color: #ffffffc9;
+  border: none;
+  background: none;
+}
+
+.Remover{
+  width: 0;
+}
+
+.BarraNav:focus{
+  outline: none;
+}
+
+.Login{
+  font-size: 16px;
+  color: #ffffffc9;
+  text-align: center;
+  padding: 14px 16px;
+  border: none;
+  background: none;
+}
+
+.Login:hover{
+  background-color: #000000bf;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 765px) {
+  #Encabezado{
+    padding: 3px 2px;
+  }
+  .Busqueda{
+    float: none;
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .Secciones {
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 650px) {
+  .Ele_Menu{
+    margin:.5% 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Busqueda{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .Ele_Menu{
+    display: inline-block;
+    float: none;
+  }
+  .logo-1{
+    float: none;
+}
+  #Encabezado{
+    text-align: center;
+  }
+}
+
+.Contenido{
   padding: 2% 15%;
 }
-.Apartados{
-  border-style:solid;
-  border-color: #ffffff48;
-  border-radius: 20px;
-  background-color: #0e0e0e00;
-  display:inline-block;
-  padding: 5px 15px;
-  margin-right: 15px;
-}
-.Apartados:hover{
-  border-color: white;
-  transition: 0.5s;
 
-}
-.Destacado{
-  width: 290px;
-  height: 220px;
+.Contenido2{
+  padding-top: 0;
+  padding-bottom: 5%;
 }
 
 .Secciones{
   padding: 0% 2%;
+}
+
+@media screen and (max-width: 945px) {
+  .Contenido {
+    padding: 2% 5%;
+}
+  .Secciones{
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 355px) {
+  .Contenido {
+    padding: 2% 3px;
+}
+}
+
+h3{
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.Apartados{
+  background-color:#282520 ;
+  display:inline-block;
+  padding-top: 5px;
+  margin-right: 15px;
+  width: 295px;
+  border-radius: 20px;
+}
+
+.Apartados img:hover{
+  border-color: white;
+  transition: 0.5s;
+
+}
+
+.Destacado{
+  width: 290px;
+  height: 220px;
+  border-style:solid;
+  border-color: #ffffff48;
+  border-radius: 20px;
+  
+}
+
+.Apartados a{
+  text-decoration: none;
+}
+
+.Apartados h4{
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #d1cccc;
+}
+
+.Apartados h4 span{
+  line-height: 1.5rem;
+  font-weight:400;
+}
+
+.Apartados a h4 span:active, .Apartados a h4:active {
+  text-decoration: underline #d1cccc;
 }
 
 #Pie-pagina{
@@ -90,18 +213,11 @@ body{
   justify-content: center;
 }
 
-.Informacion{
-  display: flex;
-  justify-content: center;
-  font-weight: bold
-}
-
 .Facebook{
   width: 30px;
   color: #ffffffc9;
   font-size: 30px;
 }
-
 
 .Facebook:hover{
   color: #1778f2;
@@ -113,7 +229,6 @@ body{
   color: #ffffffc9;
   font-size: 30px;
 }
-
 
 .Instagram:hover{
   color: #e93a56;
@@ -161,18 +276,39 @@ body{
   color: #5663F7;
 }
 
- a{
+#Redes-Sociales a{
   margin-left: 5px;
 }
 
 #Final{
   padding-top: 4%;
+  display: block;
 }
 
 #Final a{
   text-decoration: none;
   color:#ffffffc9;
 }
+
 #Final a:hover{
   color: white;
 }
+
+.Informacion{
+  display: flex;
+  justify-content: center;
+  font-weight: bold
+}
+
+@media screen and (max-width: 1073px) {
+  .Informacion{
+    display: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold
+  }
+}
+
+
+
+
